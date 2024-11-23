@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bree+Serif&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Bookmark</title>
+    <link rel="shortcut icon" href="img/imgapi1.png" type="image/x-icon">
+    <meta name="keywords" content="Bookmark">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+   <script src="js/bootstrap.bundle.min.js"></script>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+
+
+    
+   
+    
+
+
+</head>
+
+<body >
+    
+  <div class="container pt-2">
+    <!--                  site header                  -->
+    <div class="text-center py-5 bord-hov ">
+    <h1 >Bookmarker</h1>
+   
+  </div>
+<!--                  inputs                  -->
+<div class="py-4 book-form ">
+    <h2 class="text-center">
+      <i class="fa-solid fa-bookmark"></i>
+       Bookmark your favorite sites
+      <i class="fa-solid fa-bookmark"></i>
+    </h2>
+<!--                    name input                    -->
+    <div id="bookMarkName" class="pt-4 position-relative">
+      <div id="warningBox" >
+        <i class="fa-solid fa-face-smile-wink fs-4"></i>
+        <h6>Enter at least 3 letters</h6>
+        <i class="fa-solid fa-chevron-down"></i></div>
+      
+      <label class="text-white" for="SiteName"><i class="fa-solid fa-book-bookmark pe-2 text-white"></i> Site Name</label>
+      <input id="SiteName" type="text" class="input-book mt-2 " placeholder="Bookmark Name">
+
+    </div>
+<!--                  input url                    -->
+    <div id="bookMarkUrl" class="mt-5 position-relative">
+      <div id="warningBox2" >
+        <i class="fa-solid fa-chevron-up "></i>
+        <h6>Enter a valid URL</h6>
+        <i class="fa-solid fa-face-smile-wink fs-4"></i></div>
+      
+      <label class="text-white" for="SiteUrl"><i class="fa-solid fa-link pe-2 text-white"></i> Site URL</label>
+      <input id="SiteUrl" type="url" class="input-book mt-2" placeholder="Website URL">
+
+    </div>
+<!--                   btn submit and update                   -->
+    <div  class="text-center div-btn">
+    <button id="btnForm" type="submit" class="btn btn-sum px-5  my-4">submit</button>
+    <button id="btnUpd" type="text" class="btn btn-dark d-none px-4  my-4">Update now</button>
+  </div>
+
+  </div> 
+
+<!--                     search input                    -->
+  <input   placeholder="Search for website" id="searchInp" class="form-control bg-transparent text-white w-50 m-auto my-4" type="text">
+
+
+<!--                     table                    -->
+<table class="table mt-4">
+<thead class="text-center">
+  <th>index</th>
+  <th>Website Name</th>
+  <th>Visit</th>
+  <th>Delete</th>
+  <th>Update</th>
+</thead>
+<tbody  class="text-center"  id="tableBody">
+
+ 
+  
+  
+ 
+
+</tbody>
+</table>
+
+
+  </div>
+
+  
+
+    <!--                    box erorr                    -->
+  <div id="layerErorr" class="layer d-none">
+    <div class="itemLayer p-3">
+
+
+      <header class="d-flex justify-content-between py-3">
+        <div class="d-flex align-items-center ">
+        <span></span>
+        <span class="bg-warning"></span>
+        <span class="bg-success"></span>
+      </div>
+        <button id="btnClose" class="btn border-0">
+          <i  class="fa-solid fa-xmark close fs-3"></i>
+        </button>
+      </header>
+      
+      <p class="paraLayer">Site Name or Url is not valid, Please follow the rules below :</p>
+     <ul>
+      <li> <i class="fa-regular fa-circle-right p-2"></i> Site name must contain at least 3 characters</li>
+      <li> <i class="fa-regular fa-circle-left p-2"></i>Site URL must be a valid one</li>
+     </ul>
+    
+    </div>
+
+    
+
+
+  </div>
+ 
+
+
+
+ 
+
+  <script src="js/index.js"></script>
+</body>
+</html>

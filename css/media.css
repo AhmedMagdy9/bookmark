@@ -1,0 +1,26 @@
+
+
+
+
+
+
+@media screen and (max-width:770px) {
+
+
+.editMedia{
+    display: none;
+}
+}
+ 
+
+@media screen and (max-width:1000px) {
+
+    #warningBox{
+        opacity: 0 !important;
+    }
+
+    #warningBox2{
+      opacity: 0 !important;
+    }
+    }
+     
